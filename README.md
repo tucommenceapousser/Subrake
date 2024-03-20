@@ -78,9 +78,9 @@ $ subrake -d $domain -w tmp/output.txt --filter --skip-search
 
 Subrake without OSINT + Output from multiple tools combined + IP Filtering:
 ```bash
-$ domain="google.com"
-$ python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> /tmp/output.txt
-$ subrake -d $domain -w tmp/output.txt --filter --skip-search
+domain="spotify.com"
+&& python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> /tmp/output.txt
+&& subrake -d $domain -w tmp/output.txt --filter --skip-search
 ```
 
 Subrake without DNS + OSINT:
