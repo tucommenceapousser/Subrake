@@ -30,7 +30,7 @@
 ### Installation
 Installing stable version directly from PYPI:
 ```bash
-$ pip3 install subrake
+pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && requests
 ```
 
 Installing latest build:
@@ -81,14 +81,18 @@ Subrake with subevil and multiple tools combined + IP Filtering:
 domain="spotify.com" && python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> /tmp/output.txt && subrake -d $domain -w tmp/output.txt --filter --skip-search
 ```
 
-Subrake with subevil and multiple tools combined + IP Filtering:
+Subrake with subevil and multiple tools combined + IP Filtering and dirlist:
 ```bash
-domain="spotify.com" && python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> /tmp/output.txt && subrake -d $domain -w tmp/output.txt --filter --skip-search && gau - blacklist ttf,woff,svg,png | sort -u | gf xss >gf_xss.txt
+domain="honda.ru" && python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> output.txt && subrake -d $domain -w output.txt --filter --skip-search && cat output.txt | gau - blacklist ttf,woff,svg,png | sort -u | ./findit -x >> $domain/findit_xss.txt
 
 ```
 
+### Install gau, gf, findit, ...
+```
+go get -u github.com/tomnomnom/gf
+wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && cp findit /usr/bin/
 gau - blacklist ttf,woff,svg,png | sort -u | gf sqli >gf_sqli.txt
-
+```
 
 Subrake without DNS + OSINT:
 ```bash
