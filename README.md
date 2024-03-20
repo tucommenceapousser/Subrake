@@ -94,6 +94,13 @@ wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/
 gau - blacklist ttf,woff,svg,png | sort -u | gf sqli >gf_sqli.txt
 ```
 
+```
+pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && pip install requests
+```
+```
+pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && pip install requests && wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && go get -u github.com/tomnomnom/gf
+```
+
 Subrake without DNS + OSINT:
 ```bash
 $ subrake -d google.com --skip-dns
