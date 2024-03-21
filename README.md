@@ -33,6 +33,13 @@ Installing stable version directly from PYPI:
 pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && requests
 ```
 
+trkninstall 
+
+```
+pip install subrake  && pip install colored && pip install requests && pip install lxml && pip install colored && wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && go install  github.com/tomnomnom/gf@latest
+```
+
+
 Installing latest build:
 ```bash
 $ git clone https://github.com/hash3liZer/Subrake.git
