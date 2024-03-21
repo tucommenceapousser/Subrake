@@ -89,8 +89,9 @@ domain="spotify.com" && python subevil.py -d $domain > $domain/1.txt && sublist3
 ```
 
 Subrake with subevil and multiple tools combined + IP Filtering and dirlist:
+
 ```bash
-domain="honda.ru" && python subevil.py -d $domain > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> output.txt && subrake -d $domain -w output.txt --filter --skip-search && cat output.txt | gau - blacklist ttf,woff,svg,png | sort -u | ./findit -x >> $domain/findit_xss.txt
+domain='honda.ru' && rm -rf $domain && mkdir $domain && python SubEvil.py -d $domain | grep -E '^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' > $domain/1.txt && sublist3r -d $domain -o $domain/2.txt && cat $domain/* >> output.txt && subrake -d $domain -w output.txt --filter --skip-search && cat output.txt | gau - blacklist ttf,woff,svg,png | sort -u | findit -x >> $domain/findit_xss.txt
 
 ```
 
@@ -98,14 +99,17 @@ domain="honda.ru" && python subevil.py -d $domain > $domain/1.txt && sublist3r -
 ```
 go get -u github.com/tomnomnom/gf
 wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && cp findit /usr/bin/
+```
+
+```
 gau - blacklist ttf,woff,svg,png | sort -u | gf sqli >gf_sqli.txt
 ```
 
 ```
-pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && pip install requests
+pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored
 ```
 ```
-pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && pip install requests && wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && go get -u github.com/tomnomnom/gf
+pip install subrake  && pip install colored && pip install requests pip install lxml && pip install colored && wget -O findit https://raw.githubusercontent.com/tucommenceapousser/findit/main/findit.py -q && chmod +x findit && go get -u github.com/tomnomnom/gf
 ```
 
 Subrake without DNS + OSINT:
