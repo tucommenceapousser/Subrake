@@ -20,7 +20,9 @@
 
 
 
-[![Get it on SERVICE](https://gist.github.com/cxmeel/0dbc95191f239b631c3874f4ccf114e2/raw/facebook.svg)](https://github.com/tucommenceapousser/Subrake)
+[![Get it on facebook_like](https://gist.githubusercontent.com/cxmeel/0dbc95191f239b631c3874f4ccf114e2/raw/facebook_like.svg)](https://github.com/tucommenceapousser/Subrake)
+
+[![Get it on roblox_dev-animated](https://gist.githubusercontent.com/cxmeel/0dbc95191f239b631c3874f4ccf114e2/raw/roblox_dev-animated.svg)](https://github.com/tucommenceapousser/Subrake)
 
 
 
